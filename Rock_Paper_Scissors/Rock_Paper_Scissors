@@ -1,1 +1,24 @@
+import random
+
+# Game Chouces
+choices = ["Rock", "Paper" , "Scissors"]
+
+# Player Choice
+player_choice = input("Enter your choice (Rock, Paper, Scissors): ").capitalize()
+
+# Computer Choice
+computer_choice = random.choice(choices)
+
+
+# Winner Choice
+if player_choice == computer_choice:
+    print(f"You and Computer guessed {computer_choice} so It's a tie!")
+elif player_choice == "Rock" and computer_choice == "Scissors":
+        print(f"Player wins! {player_choice} beats {computer_choice}.")
+elif player_choice == "Paper" and computer_choice == "Rock":
+        print(f"Player wins! {player_choice} beats {computer_choice}.")
+elif player_choice == "Scissors" and computer_choice == "Paper":
+        print(f"Player wins! {player_choice} beats {computer_choice}.")
+else:
+    print(f"Computer wins! {computer_choice} beats {player_choice}.")
 
