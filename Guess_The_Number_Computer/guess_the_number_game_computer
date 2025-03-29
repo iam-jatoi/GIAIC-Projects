@@ -1,1 +1,34 @@
+import random
 
+def guess_the_number():
+    """Project-2: Guess The Number Game by Computer."""
+    number = random.randint(1, 100)  # The number to guess
+    guesses_left = 7  # Total guesses allowed
+
+    print("🎯 Welcome to the Number Guessing Game!")
+    print("🔢 I'm thinking of a number between 1 and 100.")
+
+    # Loop until guesses are used up or the number is guessed correctly
+    while guesses_left > 0:
+        print(f"\nYou have {guesses_left} guesses left.")
+        try:
+            guess = int(input("Take a guess: "))
+        except ValueError:
+            print("❌ Please enter a valid number.")
+            continue
+
+        if guess < number:
+            print("📉 Too low! Try again.")
+        elif guess > number:
+            print("📈Too high! Try again.")
+        else:
+            print(f"🎉 Congratulations! You guessed the number {number} correctly in {8 - guesses_left} tries.")
+            return  # Exit the game if the correct number is guessed
+
+        guesses_left -= 1  # Decrease guesses left
+
+    # If the player runs out of guesses
+    print(f"\nYou ran out of guesses. The number was {number}.")
+
+# Call the game function
+guess_the_number()
