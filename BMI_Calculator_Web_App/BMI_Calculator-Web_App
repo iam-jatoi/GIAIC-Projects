@@ -5,7 +5,7 @@ st.set_page_config(page_title="BMI Calculator", page_icon="📌", layout="center
 
 st.title("BMI Calculator Project 🖩")
 st.markdown("""
-# Apna Body Mass Index (BMI) Calculate karen Neeche Apna **Weight and Height** Enter Karen""")
+# Calculate your Body Mass Index (BMI) by entering your **Weight and Height** below.""")
 
 col1, col2 = st.columns(2)
 with col1:
