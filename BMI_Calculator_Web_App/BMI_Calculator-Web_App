@@ -11,7 +11,7 @@ col1, col2 = st.columns(2)
 with col1:
   weight = st.number_input("Weight (Kg): ", min_value=1.0, format= "%.2f")
 with col2:
-  height = st.number_input("Height (cm): ", min_value=1.0, format= "%.2f")
+  height = st.number_input("Height (m): ", min_value=1.0, format= "%.2f")
 
 if height > 0 and weight > 0:
   bmi = weight / (height ** 2)
