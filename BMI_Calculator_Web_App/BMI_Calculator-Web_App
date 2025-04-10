@@ -3,7 +3,7 @@ import time
 
 st.set_page_config(page_title="BMI Calculator", page_icon="📌", layout="centered")
 
-st.title("BMI Calculator 🖩")
+st.title("BMI Calculator Project 🖩")
 st.markdown("""
 # Apna Body Mass Index (BMI) Calculate karen Neeche Apna **Weight and Height** Enter Karen""")
 
@@ -29,3 +29,5 @@ if height > 0 and weight > 0:
 
 else:
     st.info("Please enter valid height and weight.")
+
+st.success("**Created by Jabbar Jatoi***")
